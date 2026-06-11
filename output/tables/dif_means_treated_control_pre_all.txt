@@ -1,0 +1,21 @@
+Traditional crops
+                        Variable Diff_means Mean_treated Mean_control P_value
+                       Farm size       3.47        21.59        18.12    0.00
+      Share sown with coffee (%)       0.94        50.73        49.79    0.03
+         Crop density (trees/ha)    2376.38     32891.57     30515.18    0.00
+        Coffee trees age (years)      -0.30         7.31         7.61    0.00
+ Share pest-vulnerable seeds (%)      -3.29        91.84        95.13    0.00
+           Temperature (Celsius)       0.15        18.09        17.94    0.00
+           Rainfall (m of water)       0.25         4.19         3.93    0.00
+                 Farm tree cover    1466.50      3802.55      2336.05    0.00
+
+Technified crops
+                        Variable Diff_means Mean_treated Mean_control P_value
+                       Farm size       2.47        16.76        14.29       0
+      Share sown with coffee (%)      -1.60        54.90        56.50       0
+         Crop density (trees/ha)     196.72     51325.35     51128.63       0
+        Coffee trees age (years)      -0.46         5.22         5.68       0
+ Share pest-vulnerable seeds (%)      -2.37        71.54        73.91       0
+           Temperature (Celsius)       0.21        18.34        18.14       0
+           Rainfall (m of water)       0.15         4.31         4.16       0
+                 Farm tree cover     924.96      2925.44      2000.47       0

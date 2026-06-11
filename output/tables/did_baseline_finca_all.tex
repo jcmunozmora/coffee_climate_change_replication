@@ -1,0 +1,30 @@
+
+\begingroup
+\centering
+\begin{tabular}{lcccccc}
+   \tabularnewline \midrule \midrule
+   Dependent Variable: & \multicolumn{6}{c}{Tree cover (000 m2)}\\
+   Model:            & (1)            & (2)            & (3)          & (4)            & (5)            & (6)\\  
+   \midrule
+   \emph{Variables}\\
+   Treatment*Period  & -13.18$^{***}$ & -11.54$^{***}$ & -9.913$^{*}$ & -7.102$^{***}$ & -4.435$^{***}$ & -4.229$^{***}$\\   
+                     & (3.992)        & (4.341)        & (5.181)      & (0.5156)       & (0.4609)       & (0.4295)\\   
+   Mean of dep. var. & 2489.56        & 2489.56        & 2489.56      & 2120.71        & 2120.71        & 2120.71\\  
+   Farm mean size    & 18.83          & 18.83          & 18.83        & 15.16          & 15.16          & 15.16\\  
+   \midrule
+   \emph{Fixed-effects}\\
+   cod\_finca        & Yes            & Yes            & Yes          & Yes            & Yes            & Yes\\  
+   municipio\_year   &                & Yes            &              &                & Yes            & \\  
+   vereda\_year      &                &                & Yes          &                &                & Yes\\  
+   \midrule
+   \emph{Fit statistics}\\
+   Observations      & 76,506         & 75,973         & 57,420       & 2,960,938      & 2,960,847      & 2,946,794\\  
+   R$^2$             & 0.99992        & 0.99994        & 0.99996      & 0.99990        & 0.99991        & 0.99992\\  
+   Within R$^2$      & 0.17560        & 0.04769        & 0.04167      & 0.19872        & 0.07106        & 0.07247\\  
+   \midrule \midrule
+   \multicolumn{7}{l}{\emph{Clustered (cod\_vereda) standard-errors in parentheses}}\\
+   \multicolumn{7}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+\end{tabular}
+\par\endgroup
+
+

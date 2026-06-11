@@ -1,0 +1,18 @@
+# --- Private / non-distributable data -----------------------------------------
+# Raw panel with real DANE codes and the real<->anon crosswalk: NEVER commit.
+data_raw/
+
+# Large anonymized data (panel + aux): distribute via release/LFS, not plain
+# git history. Comment these out if you DO want to track them directly.
+data/*.rds
+data/aux/*.rds
+
+# Transient run logs
+output/*_log.txt
+
+# --- R / system ---------------------------------------------------------------
+.Rhistory
+.RData
+.Rproj.user/
+.DS_Store
+*.Rproj
