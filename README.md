@@ -114,7 +114,11 @@ errors (clustered at the village `cod_vereda` level).
 - [x] Deforestation–credit (Finagro) — `lm_deforestacion_num_credito` (−3.75/−3.72/−291.52/−248.85)
 - [x] Pre-treatment balance — `dif_means_treated_control_pre_all` (all variables match)
 - [x] Productive-cycle robustness — `robustness_prod_cycle_all` (−13.24/−10.73/−4.13/−3.66 vs paper −13.35/−10.70/−3.88/−4.42)
-- [x] Staggered DiD, Callaway–Sant'Anna — `did_staggered_*` (traditional; technified via `RUN_TEC=TRUE`, heavy)
+- [x] Staggered DiD, Callaway–Sant'Anna (technified) — `did_staggered_*_young`
+      (simple ATT −16.42, matches the paper exactly; `R/07b_staggered_tec.R`,
+      ~11 min, ~2 GB). The paper reports the staggered estimator for the
+      technified group only; `R/07_staggered_did.R` also runs a traditional
+      version (raw controls, not a published exhibit).
 
 **Frontier robustness routines (audit add-ons, `R/10_frontier_robustness.R`):**
 Goodman-Bacon decomposition + Rambachan-Roth HonestDiD sensitivity. Implemented

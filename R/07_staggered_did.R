@@ -65,11 +65,9 @@ cat(sprintf("Traditional sample: %d obs, %d farms\n",
             nrow(trad), dplyr::n_distinct(trad$cod_finca)))
 run_cs(trad, "trad")
 
-if (RUN_TEC) {
-  tec <- make_staggered(is_technified)
-  cat(sprintf("Technified sample: %d obs, %d farms\n",
-              nrow(tec), dplyr::n_distinct(tec$cod_finca)))
-  run_cs(tec, "tec")
-} else {
-  cat("Technified group skipped (set RUN_TEC=TRUE to run; very heavy).\n")
-}
+# NOTE: the published staggered table is for the TECHNIFIED group only, and the
+# original 04f script uses TIME-TREND-INTERACTED controls there (unlike the
+# traditional 04e, which uses raw controls as above). The technified run is
+# therefore in its own script, R/07b_staggered_tec.R, which uses the correct
+# interacted controls and reproduces the paper's simple ATT of -16.42 exactly.
+cat("Technified group: run R/07b_staggered_tec.R (interacted controls).\n")
