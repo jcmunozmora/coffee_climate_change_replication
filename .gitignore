@@ -16,3 +16,5 @@ output/*_log.txt
 .Rproj.user/
 .DS_Store
 *.Rproj
+/data
+/data_raw
